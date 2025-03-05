@@ -27,3 +27,12 @@ console.log(newProduct);
 // >> find method
 const product = products.find(p => p.id === 3);
 console.log(product);
+
+// >> increase 100 to brand apple price
+const increaseApple = products.map(product => {
+    if(product.brand === 'apple') {
+        product.price = product.price + 100;
+    }
+    return product;
+});
+console.log(increaseApple);
